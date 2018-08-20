@@ -43,6 +43,10 @@
     <Compile Include="Entities\ModulosAcesso.cs" />
     <Compile Include="Entities\PerfilUsuario.cs" />
     <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="Interfaces\Instrastructure\IGerenciadorDeRepositorio.cs" />
+    <Compile Include="Interfaces\Instrastructure\IUnidadeDeTrabalho.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositorioBase.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositorioDeUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

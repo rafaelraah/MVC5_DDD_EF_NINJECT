@@ -1,4 +1,5 @@
 ﻿using MVC5_DDD_EF_NINJECT.Domain.Entities;
+using MVC5_DDD_EF_NINJECT.Infrastructure.Data.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -50,6 +51,12 @@ namespace MVC5_DDD_EF_NINJECT.Infrastructure.Data.Context
             
             //Colocar apenas 2 caracteres nas propriedades que contenham 'UF'
             modelBuilder.Properties<string>().Where(p => p.Name.Contains("UF")).Configure(p => p.HasMaxLength(2));
+
+            //Adicionar os maps
+            modelBuilder.Configurations.Add(new ModulosAcessoMap());
+            modelBuilder.Configurations.Add(new PerfilUsuarioMap());
+            modelBuilder.Configurations.Add(new UsuarioMap());
+
 
             base.OnModelCreating(modelBuilder);
         }

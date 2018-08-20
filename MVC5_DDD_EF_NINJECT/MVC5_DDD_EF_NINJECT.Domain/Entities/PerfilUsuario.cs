@@ -14,6 +14,8 @@ namespace MVC5_DDD_EF_NINJECT.Domain.Entities
         public int IdPerfilUsuario { get; set; }
         public string NomePerfil { get; set; } 
         public DateTime DataCadastro { get; set; }
+        public bool FlAtivo { get; set; }
+        public bool FlAdminMaster { get; set; }
         public virtual ICollection<Usuario> Usuarios { get; set; }
         public virtual ICollection<ModulosAcesso> ModulosAcessos { get; set; }
     }
