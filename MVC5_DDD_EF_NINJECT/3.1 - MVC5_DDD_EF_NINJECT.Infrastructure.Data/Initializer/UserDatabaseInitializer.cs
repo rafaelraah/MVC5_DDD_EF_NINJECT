@@ -62,7 +62,6 @@ namespace MVC5_DDD_EF_NINJECT.Infrastructure.Data.Initializer
                 }
             };
             return perfisUsuario; 
-        }
-
+        }   
     }
 }

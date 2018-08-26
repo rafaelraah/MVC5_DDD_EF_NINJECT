@@ -211,6 +211,12 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVC5_DDD_EF_NINJECT.Domain\2.1 - MVC5_DDD_EF_NINJECT.Domain.csproj">
+      <Project>{8215b29e-29bb-4179-a7aa-d187a8cdb1cc}</Project>
+      <Name>2.1 - MVC5_DDD_EF_NINJECT.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

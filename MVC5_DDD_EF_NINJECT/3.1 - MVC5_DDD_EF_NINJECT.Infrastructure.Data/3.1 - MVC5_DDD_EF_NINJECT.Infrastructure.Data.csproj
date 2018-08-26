@@ -53,6 +53,16 @@
   <ItemGroup>
     <Compile Include="Configuration\ConfigurationsEF.cs" />
     <Compile Include="Configuration\GerenciadorDeRepositorio.cs" />
+    <Compile Include="Configuration\UnidadeDeTrabalhoEF.cs" />
+    <Compile Include="Migrations\201808262048315_NomeDaMigracao.cs" />
+    <Compile Include="Migrations\201808262048315_NomeDaMigracao.Designer.cs">
+      <DependentUpon>201808262048315_NomeDaMigracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808262050296_NomeMigracao1.cs" />
+    <Compile Include="Migrations\201808262050296_NomeMigracao1.Designer.cs">
+      <DependentUpon>201808262050296_NomeMigracao1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RepositorioDePerfilDeUsuario.cs" />
     <Compile Include="Security\Constants.cs" />
     <Compile Include="Context\ContextoBanco.cs" />
     <Compile Include="Security\Crypto.cs" />
@@ -83,6 +93,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808200318328_NomeMigracao.resx">
       <DependentUpon>201808200318328_NomeMigracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808262048315_NomeDaMigracao.resx">
+      <DependentUpon>201808262048315_NomeDaMigracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808262050296_NomeMigracao1.resx">
+      <DependentUpon>201808262050296_NomeMigracao1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
